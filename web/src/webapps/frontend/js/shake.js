@@ -85,9 +85,9 @@ function getShakeWinner(){
         success: function(data2){
             $("#loading").css("display","none");
             var shakeWinnerMessage = data2.data;
-            var shakeWinnerHtml  = "<div class='animated bounceIn'><img src='" + shakeWinnerMessage.headImgUrl + "' alt='摇一摇获奖者'  width='480px' height='550px'><a href='#' style='text-align: center;font-size: 24px;font-family: 微软雅黑, Microsoft YaHei;color: #ffff00;' class='users-list-name'>" + shakeWinnerMessage.userNo + "</a><a href='#' style='text-align: center;font-size: 24px;font-family: 微软雅黑, Microsoft YaHei;color: #ffff00;' class='users-list-name'>" + shakeWinnerMessage.userName + "</a></div>";
+            var shakeWinnerHtml  = "<div class='animated bounceIn'><img src='" + shakeWinnerMessage.headImgUrl + "' alt='摇一摇获奖者'  width='480px' height='550px' class='img-circle'><a href='#' style='text-align: center;font-size: 24px;font-family: 微软雅黑, Microsoft YaHei;color: #ffff00;' class='users-list-name'>" + shakeWinnerMessage.userNo + "</a><a href='#' style='text-align: center;font-size: 24px;font-family: 微软雅黑, Microsoft YaHei;color: #ffff00;' class='users-list-name'>" + shakeWinnerMessage.userName + "</a></div>";
             $("#winningList").remove();
-            $("#radiation").prepend("<img src='http://hashzhang.com/data/frontend/image/winningList.png' id='winningList' class='animated bounceIn'>");
+            $("#radiation").prepend("<img src='http://hashzhang.com/data/frontend/image/winningList.png' id='winningList' class='animated bounceIn '>");
             //获奖界面显示出来
             $("#shakeDiv").css("display","block");
             $("#head").css("display","none");
