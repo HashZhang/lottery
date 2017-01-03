@@ -23,7 +23,7 @@ block content
             button.btn.btn-info#startShake(onclick="startShake()",style="display:block;width:100px;margin-left:2%;") 开始摇一摇
             button.btn.btn-danger#endShake(onclick="endShake()",style="display:none;width:100px;margin-left:2%;") 结束摇一摇
             div.btn-group
-                button.btn.btn-info.dropdown-toggle(data-toggle="dropdown",style="display:block;width:160px;margin-left:2%;") 选择顺手付红包
+                button.btn.btn-info.dropdown-toggle#sfPayChoice(data-toggle="dropdown",style="display:block;width:160px;margin-left:2%;") 选择顺手付红包
                     span.caret
                     span.sr-only
                 ul.dropdown-menu(role="menu")
@@ -36,6 +36,7 @@ block content
                     li
                         a(href="javascript:startSfPay3()") 顺手付活动三
             button.btn.btn-danger#initAward(onclick="initAward()",style="display:block;width:100px;margin-left:2%;") 初始化抽奖
+
 
         div.box-body
             div.table-responsive
