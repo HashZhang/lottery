@@ -12,7 +12,6 @@ import java.io.*;
 public class SQLUtils {
     public static void main(String[] args) {
         BufferedReader br = null;
-
         try {
             //构造BufferedReader对象
             br = new BufferedReader(new FileReader("d:\\user\\862911\\桌面\\1.txt"));
@@ -28,7 +27,6 @@ public class SQLUtils {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-
             //关闭BufferedReader
             if (br != null) {
                 try {
